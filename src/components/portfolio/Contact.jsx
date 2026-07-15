@@ -5,9 +5,21 @@ import Reveal from "./shared/Reveal";
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const CONTACT_LINKS = [
-  { icon: Mail, label: "hello@devportfolio.dev", href: "mailto:hello@devportfolio.dev" },
-  { icon: Github, label: "/github", href: "https://github.com" },
-  { icon: Linkedin, label: "/linkedin", href: "https://linkedin.com" },
+  {
+    icon: Mail,
+    label: "agostinhorafael4@gmail.com",
+    href: "mailto:agostinhorafael4@gmail.com",
+  },
+  {
+    icon: Github,
+    label: "/rafael-santos-2",
+    href: "https://github.com/rafael-santos-2",
+  },
+  {
+    icon: Linkedin,
+    label: "/rafael-santos",
+    href: "https://www.linkedin.com/in/rafael-santos-0a0870253/",
+  },
 ];
 
 const inputClasses =

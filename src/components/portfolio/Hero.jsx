@@ -12,7 +12,7 @@ const HEADLINE_LINES = [
 const META = [
   { key: "ROLE", value: "Fullstack Engineer" },
   { key: "LOC", value: "Gent, BE" },
-  { key: "EXP", value: "6+ jaar in product" },
+  { key: "EXP", value: "3+ jaar in productie" },
 ];
 
 export default function Hero() {

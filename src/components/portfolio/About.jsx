@@ -1,7 +1,7 @@
 import Reveal from "./shared/Reveal";
 
 const STATS = [
-  { value: "6+", label: "Jaar in product" },
+  { value: "3+", label: "Jaar in productie" },
   { value: "40+", label: "Projecten geleverd" },
   { value: "∞", label: "Koffie verwerkt" },
 ];
