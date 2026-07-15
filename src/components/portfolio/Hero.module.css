@@ -1,0 +1,30 @@
+.circuitBg {
+  background-image:
+    linear-gradient(hsl(var(--primary) / 0.16) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--primary) / 0.16) 1px, transparent 1px),
+    radial-gradient(circle at 20% 30%, hsl(var(--primary) / 0.35), transparent 40%),
+    radial-gradient(circle at 80% 70%, hsl(var(--accent) / 0.12), transparent 45%);
+  background-size:
+    42px 42px,
+    42px 42px,
+    100% 100%,
+    100% 100%;
+}
+
+.glow {
+  text-shadow: 0 0 24px hsl(var(--primary) / 0.35);
+}
+
+.bounce {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}

@@ -1,6 +1,0 @@
-.container {
-  flex-shrink: 0;
-  display: inline-flex;
-  vertical-align: middle;
-  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
-}

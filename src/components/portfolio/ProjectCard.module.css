@@ -1,0 +1,45 @@
+.scanCard {
+  position: relative;
+}
+
+.scanCard::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -20%;
+  height: 20%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    hsl(var(--primary) / 0.18),
+    transparent
+  );
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.scanCard:hover::after,
+.scanCard:focus-visible::after {
+  opacity: 1;
+  animation: scan 1.8s linear infinite;
+}
+
+@keyframes scan {
+  0% {
+    top: -20%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+.endpoint {
+  transition: color 0.2s ease;
+}
+
+.scanCard:hover .endpoint,
+.scanCard:focus-visible .endpoint {
+  color: hsl(var(--accent));
+}

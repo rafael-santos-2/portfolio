@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 240 6% 7%;
+  --foreground: 240 5% 82%;
+  --stark: 0 0% 100%;
+  --card: 240 6% 9%;
+  --primary: 221 100% 60%;
+  --accent: 41 100% 50%;
+  --border: 240 5% 16%;
+  --secondary: 240 5% 14%;
+  --muted-foreground: 240 4% 60%;
+}
+
+.light {
+  --background: 240 20% 97%;
+  --foreground: 240 6% 20%;
+  --stark: 240 10% 8%;
+  --card: 0 0% 100%;
+  --primary: 221 83% 53%;
+  --accent: 36 92% 40%;
+  --border: 240 6% 86%;
+  --secondary: 240 20% 94%;
+  --muted-foreground: 240 4% 42%;
+}
+
+* {
+  border-radius: 0 !important;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: hsl(var(--stark));
+  font-family: "Instrument Sans", sans-serif;
+}
+
+::selection {
+  background: hsl(var(--primary));
+  color: #ffffff;
+}
+
+:focus-visible {
+  outline: 2px solid hsl(var(--accent));
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

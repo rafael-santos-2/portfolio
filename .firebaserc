@@ -1,7 +1,0 @@
-{
-  "projects": {
-    "default": "bird-larsen",
-    "development": "bird-larsen",
-    "production": "bird-larsen"
-  }
-}
