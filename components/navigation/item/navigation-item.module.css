@@ -1,0 +1,77 @@
+.item,
+.item:where(a) {
+  text-decoration: none;
+  color: inherit;
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 8px;
+  padding: 0 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 200ms, color 200ms;
+  min-height: 40px;
+  white-space: nowrap;
+}
+
+.item.active {
+  background-color: var(--primary-active);
+  color: var(--primary-main);
+}
+
+.text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.text p,
+.text .caption {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.item.mini .caption {
+  display: none;
+}
+
+.item p {
+  font-size: 14px;
+}
+
+.item:hover {
+  background-color: var(--primary-hover);
+  color: var(--primary-main);
+}
+
+.item.logout {
+  color: var(--error-main);
+}
+
+.item.logout:hover {
+  background-color: var(--error-hover);
+}
+
+.item.mini {
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px 0;
+}
+
+.item.mini p {
+  font-size: 9px;
+}
+
+@media screen and (max-width: 768px) {
+  .item {
+    min-width: 60px;
+  }
+
+  .item p {
+    font-size: 9px;
+  }
+}

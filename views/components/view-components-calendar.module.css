@@ -1,0 +1,11 @@
+.wrapper {
+  flex: 1;
+  min-height: 0;
+  padding: 24px;
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 12px;
+  }
+}

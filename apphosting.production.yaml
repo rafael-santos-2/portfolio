@@ -1,0 +1,39 @@
+env:
+  - variable: NEXT_PUBLIC_FIREBASE_API_KEY
+    secret: 
+
+  - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+    secret: 
+
+  - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
+    secret: 
+
+  - variable: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+    secret: 
+
+  - variable: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
+    secret: 
+
+  - variable: NEXT_PUBLIC_FIREBASE_APPID
+    secret: 
+
+  - variable: NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
+    secret: 
+
+  - variable: NEXT_PUBLIC_FIRESTORE
+    secret: 
+
+  - variable: NEXT_PUBLIC_FIRESTORAGE
+    secret: 
+
+  - variable: FIREBASE_PRIVATE_KEY
+    secret: 
+
+  - variable: FIREBASE_CLIENT_EMAIL
+    secret: 
+
+  - variable: NEXT_PUBLIC_DEBUGMODE
+    value: "false"
+
+  - variable: NEXT_PUBLIC_VERSION
+    value: "1.0.0"

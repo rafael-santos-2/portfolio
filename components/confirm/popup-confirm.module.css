@@ -1,0 +1,12 @@
+.body {
+  padding: 16px;
+}
+
+.actions {
+
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 8px;
+  
+}

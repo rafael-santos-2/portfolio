@@ -1,0 +1,40 @@
+{
+  "firestore": [
+    {
+      "database": "development",
+      "rules": "firestore.development.rules",
+      "indexes": "firestore.indexes.json"
+    },
+    {
+      "database": "production",
+      "rules": "firestore.production.rules",
+      "indexes": "firestore.indexes.json"
+    }
+  ],
+  "storage": [
+    {
+      "bucket": "bird-larsen-development",
+      "rules": "storage.development.rules"
+    },
+    {
+      "bucket": "bird-larsen.firebasestorage.app",
+      "rules": "storage.production.rules"
+    }
+  ],
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run build"
+      ]
+    }
+  ]
+}

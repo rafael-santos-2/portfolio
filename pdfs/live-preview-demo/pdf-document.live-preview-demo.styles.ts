@@ -1,0 +1,137 @@
+import { StyleSheet } from "@react-pdf/renderer";
+
+export const s = StyleSheet.create({
+  page: {
+    backgroundColor: "#f5f1e8",
+    color: "#1f2520",
+    fontSize: 11,
+    paddingTop: 32,
+    paddingRight: 34,
+    paddingBottom: 32,
+    paddingLeft: 34,
+    fontFamily: "Helvetica",
+  },
+  header: {
+    backgroundColor: "#1f5c4a",
+    borderRadius: 16,
+    color: "#fffaf1",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginBottom: 24,
+    padding: 20,
+  },
+  headerLabel: {
+    fontSize: 10,
+    letterSpacing: 1.2,
+    marginBottom: 8,
+    opacity: 0.85,
+    textTransform: "uppercase",
+  },
+  headerTitle: {
+    fontSize: 26,
+    fontWeight: 700,
+    marginBottom: 4,
+  },
+  headerSubtitle: {
+    fontSize: 12,
+    opacity: 0.9,
+  },
+  invoiceBox: {
+    alignItems: "flex-end",
+    justifyContent: "space-between",
+  },
+  invoiceNumber: {
+    backgroundColor: "#fffaf1",
+    borderRadius: 999,
+    color: "#1f5c4a",
+    fontSize: 11,
+    fontWeight: 700,
+    marginBottom: 10,
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+  },
+  dateText: {
+    fontSize: 10,
+    marginTop: 4,
+    opacity: 0.9,
+  },
+  contentGrid: {
+    flexDirection: "row",
+    gap: 18,
+    marginBottom: 24,
+  },
+  card: {
+    backgroundColor: "#fffaf4",
+    border: "1 solid #d6d0c0",
+    borderRadius: 14,
+    flex: 1,
+    minHeight: 118,
+    padding: 16,
+  },
+  cardLabel: {
+    color: "#7a6f5d",
+    fontSize: 9,
+    letterSpacing: 1,
+    marginBottom: 10,
+    textTransform: "uppercase",
+  },
+  cardTitle: {
+    fontSize: 15,
+    fontWeight: 700,
+    marginBottom: 6,
+  },
+  cardLine: {
+    fontSize: 11,
+    lineHeight: 1.5,
+  },
+  summaryCard: {
+    backgroundColor: "#efe7d8",
+    borderRadius: 16,
+    marginBottom: 24,
+    padding: 18,
+  },
+  summaryLabel: {
+    color: "#7a6f5d",
+    fontSize: 10,
+    letterSpacing: 1.1,
+    marginBottom: 8,
+    textTransform: "uppercase",
+  },
+  projectTitle: {
+    fontSize: 18,
+    fontWeight: 700,
+    marginBottom: 8,
+  },
+  amountRow: {
+    alignItems: "center",
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  amountLabel: {
+    fontSize: 12,
+  },
+  amountValue: {
+    color: "#1f5c4a",
+    fontSize: 24,
+    fontWeight: 700,
+  },
+  notesBox: {
+    backgroundColor: "#fffaf4",
+    border: "1 solid #d6d0c0",
+    borderRadius: 14,
+    padding: 16,
+  },
+  notesText: {
+    fontSize: 11,
+    lineHeight: 1.6,
+  },
+  footer: {
+    bottom: 24,
+    color: "#7a6f5d",
+    fontSize: 10,
+    left: 34,
+    position: "absolute",
+    right: 34,
+    textAlign: "center",
+  },
+});

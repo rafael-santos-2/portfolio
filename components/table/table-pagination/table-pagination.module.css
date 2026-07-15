@@ -1,0 +1,31 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--color-border);
+}
+
+@media (max-width: 768px) {
+  .dense-toggle {
+    display: none;
+  }
+}
+
+.dense-toggle {
+  padding: 8px 16px;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .dense-toggle {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}

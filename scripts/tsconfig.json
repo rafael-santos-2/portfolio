@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "rootDir": "./functions",
+    "outDir": "out"
+  },
+  "include": ["./functions/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

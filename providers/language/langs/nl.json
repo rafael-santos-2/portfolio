@@ -1,0 +1,725 @@
+{
+	"general": {
+		"loading": "Bezig met laden",
+		"error": "Er is een fout opgetreden. Probeer het later opnieuw.",
+		"notFound": {
+			"title": "Pagina niet gevonden",
+			"content1": "Sorry, we konden de pagina die je zocht niet vinden.",
+			"content2": "Misschien heb je de URL verkeerd getypt? Controleer de spelling.",
+			"action": "Terug naar Home"
+		},
+		"notAuthenticated": {
+			"title": "Toegang geweigerd",
+			"content1": "Je bent niet geauthenticeerd om deze pagina te bekijken.",
+			"content2": "Log in om verder te gaan.",
+			"actions": {
+				"home": "Terug naar Home",
+				"signIn": "Ga naar Inloggen"
+			}
+		},
+		"underConstruction": {
+			"title": "Pagina in aanbouw",
+			"content1": "Deze pagina wordt momenteel gebouwd.",
+			"content2": "Kom later nog eens terug.",
+			"action": "Terug naar Home"
+		},
+		"noPermission": {
+			"title": "Geen toegang",
+			"content1": "Je hebt niet de juiste rol om deze pagina te bekijken.",
+			"content2": "Neem contact op met je beheerder als je denkt dat dit een fout is.",
+			"action": "Terug naar Home"
+		}
+	},
+	"components": {
+		"upload": {
+			"avatar": {
+				"upload": "Foto uploaden",
+				"update": "Foto bijwerken",
+				"delete": "Foto verwijderen"
+			},
+			"placeholder": {
+				"title": "Sleep of selecteer een bestand",
+				"description": "Sleep bestanden hier naartoe of klik om te",
+				"browse": "bladeren",
+				"descriptionSuffix": "op je computer."
+			}
+		},
+		"autocomplete": {
+			"noOptions": "Geen opties",
+			"loading": "Bezig met laden..."
+		},
+		"popupDeleteConfirm": {
+			"title": "Verwijder {{name}}",
+			"description": "Ben je zeker dat je {{name}} wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.",
+			"confirm": "Verwijderen",
+			"cancel": "Annuleren"
+		},
+		"infoItem": {
+			"empty": "Niet gevonden",
+			"copied": "Gekopieerd!",
+			"copy": "Kopieer"
+		},
+		"tableCell": {
+			"empty": "N/A"
+		},
+		"table": {
+			"columns": "Kolommen",
+			"manageColumns": "Kolommen beheren",
+			"sortedAscending": "gesorteerd oplopend",
+			"sortedDescending": "gesorteerd aflopend",
+			"selectAll": "Alle rijen selecteren",
+			"noData": "Geen gegevens gevonden",
+			"selected": "{{count}} geselecteerd",
+			"pagination": {
+				"rowsPerPage": "Rijen per pagina:",
+				"displayedRows": "{{from}}–{{to}} van {{count}}",
+				"displayedRowsUnknown": "{{from}}–{{to}} van meer dan {{to}}",
+				"denseToggle": "Compacte weergave"
+			}
+		}
+	},
+	"auth": {
+		"signIn": {
+			"title": "Inloggen",
+			"form": {
+				"email": "E-mail",
+				"password": "Wachtwoord",
+				"submit": "Inloggen",
+				"submitting": "Bezig met inloggen..."
+			},
+			"forgotPassword": "Wachtwoord vergeten?",
+			"errors": {
+				"accountNotFound": "Account niet gevonden.",
+				"accountDisabled": "Je account is uitgeschakeld. Neem contact op met je beheerder.",
+				"invalidCredentials": "Ongeldige gegevens. Probeer opnieuw.",
+				"noValidEmail": "Geen geldige e-mail opgegeven.",
+				"required": "Verplicht",
+				"passwordTooShort": "Wachtwoord moet minstens 8 karakters hebben."
+			}
+		},
+		"forgotPassword": {
+			"title": "Wachtwoord vergeten",
+			"content": "Reset je wachtwoord door je e-mail in te vullen. We sturen je een resetmail.",
+			"form": {
+				"email": "E-mail",
+				"submit": "Wachtwoord resetten",
+				"submitting": "Resetverzoek wordt verzonden...",
+				"submitted": "Resetverzoek verzonden"
+			},
+			"backToSignIn": "Terug naar Inloggen",
+			"errors": {
+				"noValidEmail": "Geen geldige e-mail opgegeven."
+			}
+		}
+	},
+  "navigation": {
+    "collapse": "Navigatie inklappen",
+    "expand": "Navigatie uitklappen",
+    "more": "Meer",
+    "dashboard": "Dashboard",
+    "team": "Team",
+    "profile": "Profiel",
+    "settings": "Instellingen",
+    "logout": "Uitloggen"
+  },
+  "cardFile": {
+    "download": "Downloaden",
+    "delete": "Verwijderen"
+  },
+  "confirm": {
+    "cancel": "Annuleren",
+    "confirm": "Bevestigen"
+  },
+  "editor": {
+    "toolbar": {
+      "bold": "Vet",
+      "italic": "Cursief",
+      "underline": "Onderstrepen",
+      "strikethrough": "Doorhalen",
+      "bulletList": "Ongeordende lijst",
+      "orderedList": "Geordende lijst",
+      "alignLeft": "Links uitlijnen",
+      "alignCenter": "Centreren",
+      "alignRight": "Rechts uitlijnen",
+      "alignJustify": "Uitvullen",
+      "inlineCode": "Inline code",
+      "codeBlock": "Codeblok",
+      "blockquote": "Blokcitaat",
+      "horizontalRule": "Horizontale lijn",
+      "hardBreak": "Harde regelterugloop",
+      "clearFormatting": "Opmaak wissen",
+      "undo": "Ongedaan maken",
+      "redo": "Opnieuw uitvoeren",
+      "fullscreen": "Volledig scherm",
+      "image": "Afbeelding",
+      "link": "Link",
+      "unsetLink": "Link verwijderen",
+      "headingMenu": "Kopstijl"
+    },
+    "heading": {
+      "paragraph": "Paragraaf",
+      "heading1": "Kop 1",
+      "heading2": "Kop 2",
+      "heading3": "Kop 3",
+      "heading4": "Kop 4",
+      "heading5": "Kop 5",
+      "heading6": "Kop 6"
+    },
+    "image": {
+      "tabUpload": "Uploaden",
+      "tabUrl": "URL",
+      "uploadDescription": "Selecteer een afbeelding van je computer.",
+      "uploadButton": "Afbeelding kiezen",
+      "uploading": "Bezig met uploaden...",
+      "urlDescription": "Plak de URL van een afbeelding.",
+      "insertButton": "Invoegen"
+    },
+    "link": {
+      "urlPlaceholder": "Voer URL in...",
+      "apply": "Toepassen"
+    }
+  },
+	"calendar": {
+		"toolbar": {
+			"today": "Vandaag",
+			"prev": "Vorige",
+			"next": "Volgende",
+			"search": "Zoek evenementen…",
+			"allCategories": "Alle categorieën",
+			"views": {
+				"dayGridMonth": "Maand",
+				"timeGridWeek": "Week",
+				"timeGridDay": "Dag",
+				"listWeek": "Agenda"
+			}
+		},
+		"eventDetail": {
+			"allDay": "Hele dag"
+		}
+	},
+	"dashboard": {
+		"title": "Dashboard"
+	},
+  "team": {
+    "title": "Team",
+		"list": {
+			"disabled": "Uitgeschakeld"
+		},
+		"create": {
+			"title": "Teamlid aanmaken",
+			"form": {
+				"firstName": "Voornaam",
+				"lastName": "Achternaam",
+				"email": "E-mail",
+				"role": "Rol",
+				"password": "Wachtwoord",
+				"cancel": "Annuleren",
+				"submit": "Aanmaken"
+			},
+			"errors": {
+				"firstNameRequired": "Voornaam is verplicht.",
+				"emailRequired": "E-mail is verplicht.",
+				"invalidEmail": "Ongeldig e-mailadres.",
+				"emailInUse": "Dit e-mailadres is al in gebruik.",
+				"passwordTooShort": "Wachtwoord moet minstens 8 tekens lang zijn.",
+				"noSmallerLetter": "Wachtwoord moet minstens één kleine letter bevatten.",
+				"noUppercaseLetter": "Wachtwoord moet minstens één hoofdletter bevatten.",
+				"noNumber": "Wachtwoord moet minstens één cijfer bevatten.",
+				"noSpecialCharacter": "Wachtwoord moet minstens één speciaal teken bevatten."
+			},
+			"toasts": {
+				"createSuccess": "Teamlid succesvol aangemaakt.",
+				"createError": "Er is een fout opgetreden bij het aanmaken van het teamlid. Probeer het later opnieuw."
+			}
+		},
+		"details": {
+			"title": "Team - {{name}}",
+			"notFound": "Teamlid niet gevonden",
+			"return": "Terug naar teamlijst",
+			"delete": "Teamlid verwijderen",
+			"disable": "Teamlid uitschakelen",
+			"enable": "Teamlid inschakelen",
+			"confirm": {
+				"disable": {
+					"title": "{{name}} uitschakelen",
+					"description": "Ben je zeker dat je {{name}} wilt uitschakelen? Deze persoon kan dan niet meer inloggen.",
+					"confirm": "Uitschakelen",
+					"cancel": "Annuleren"
+				},
+				"enable": {
+					"title": "{{name}} inschakelen",
+					"description": "Ben je zeker dat je {{name}} wilt inschakelen? Deze persoon kan dan opnieuw inloggen.",
+					"confirm": "Inschakelen",
+					"cancel": "Annuleren"
+				}
+			},
+			"toasts": {
+				"deleteSuccess": "Teamlid succesvol verwijderd.",
+				"deleteError": "Er is een fout opgetreden bij het verwijderen van het teamlid. Probeer het later opnieuw.",
+				"disableSuccess": "Teamlid is uitgeschakeld.",
+				"disableError": "Er is een fout opgetreden bij het uitschakelen van het teamlid. Probeer het later opnieuw.",
+				"enableSuccess": "Teamlid is ingeschakeld.",
+				"enableError": "Er is een fout opgetreden bij het inschakelen van het teamlid. Probeer het later opnieuw."
+			}
+		},
+		"general": {
+			"title": "Algemeen",
+			"form": {
+				"firstName": "Voornaam",
+				"lastName": "Achternaam",
+				"email": "E-mail",
+				"role": "Rol",
+				"submit": "Teamlid bijwerken"
+			},
+			"errors": {
+				"firstNameRequired": "Voornaam is verplicht.",
+				"emailRequired": "E-mail is verplicht.",
+				"invalidEmail": "Ongeldig e-mailadres."
+			},
+			"toasts": {
+				"updateSuccess": "Teamlid succesvol bijgewerkt.",
+				"updateError": "Er is een fout opgetreden bij het bijwerken van het teamlid. Probeer het later opnieuw."
+			}
+		},
+		"email": {
+			"title": "E-mail",
+			"description": "Update het e-mailadres. Dit wordt gebruikt voor inloggen en communicatie.",
+			"form": {
+				"email": "E-mail",
+				"submit": "E-mail bijwerken"
+			},
+			"errors": {
+				"invalidEmail": "Ongeldig e-mailadres.",
+				"emailInUse": "Dit e-mailadres is al in gebruik."
+			},
+			"toasts": {
+				"updateSuccess": "E-mail succesvol bijgewerkt.",
+				"updateError": "Er is een fout opgetreden bij het bijwerken van de e-mail. Probeer het later opnieuw."
+			}
+		},
+		"password": {
+			"title": "Wachtwoord",
+			"description": "Voer hier het nieuwe wachtwoord in dat je wilt gebruiken voor dit account. Het wachtwoord moet minstens 8 tekens lang zijn en een hoofdletter, een kleine letter, een cijfer en een speciaal teken bevatten.",
+			"form": {
+				"currentPassword": "Huidig wachtwoord",
+				"newPassword": "Nieuw wachtwoord",
+				"confirmNewPassword": "Bevestig nieuw wachtwoord",
+				"hide": "Wachtwoord verbergen",
+				"show": "Wachtwoord tonen",
+				"submit": "Wachtwoord bijwerken"
+			},
+			"errors": {
+				"required": "Verplicht",
+				"passwordTooShort": "Wachtwoord moet minstens {{length}} tekens lang zijn.",
+				"noSmallerLetter": "Wachtwoord moet minstens één kleine letter bevatten.",
+				"noUppercaseLetter": "Wachtwoord moet minstens één hoofdletter bevatten.",
+				"noNumber": "Wachtwoord moet minstens één cijfer bevatten.",
+				"noSpecialCharacter": "Wachtwoord moet minstens één speciaal teken bevatten.",
+				"noMatch": "Nieuw wachtwoord en bevestiging komen niet overeen."
+			},
+			"toasts": {
+				"updateSuccess": "Wachtwoord succesvol bijgewerkt.",
+				"wrongCurrentPassword": "Huidig wachtwoord is onjuist.",
+				"updateError": "Er is een fout opgetreden bij het bijwerken van het wachtwoord. Probeer het later opnieuw."
+			}
+		}
+  },
+  "profile": {
+    "title": "Profiel",
+		"notFound": {
+			"title": "Profiel niet gevonden",
+			"description": "Sorry, we konden het profiel dat je zocht niet vinden."
+		},
+		"general": {
+			"title": "Algemeen",
+			"form": {
+				"firstName": "Voornaam",
+				"lastName": "Achternaam",
+				"avatar": "Profielfoto",
+				"submit": "Profiel bijwerken"
+			},
+			"errors": {
+				"firstNameRequired": "Voornaam is verplicht."
+			},
+			"toasts": {
+				"updateSuccess": "Profiel succesvol bijgewerkt.",
+				"updateError": "Er is een fout opgetreden bij het bijwerken van het profiel. Probeer het later opnieuw."
+			}
+		},
+		"email": {
+			"title": "E-mail",
+			"description": "Beheer hiet je e-mailadres. Dit e-mailadres wordt gebruikt voor inloggen en communicatie.",
+			"form": {
+				"email": "E-mail",
+				"submit": "E-mail bijwerken"
+			},
+			"errors": {
+				"invalidEmail": "Ongeldig e-mailadres.",
+				"emailInUse": "Dit e-mailadres is al in gebruik."
+			},
+			"toasts": {
+				"updateSuccess": "E-mail succesvol bijgewerkt.",
+				"updateError": "Er is een fout opgetreden bij het bijwerken van de e-mail. Probeer het later opnieuw."
+			}
+		},
+		"password": {
+			"title": "Wachtwoord",
+			"description": "Voer hier het nieuwe wachtwoord in dat je wilt gebruiken voor dit account. Het wachtwoord moet minstens 8 tekens lang zijn en een hoofdletter, een kleine letter, een cijfer en een speciaal teken bevatten.",
+			"form": {
+				"currentPassword": "Huidig wachtwoord",
+				"newPassword": "Nieuw wachtwoord",
+				"confirmNewPassword": "Bevestig nieuw wachtwoord",
+				"hide": "Wachtwoord verbergen",
+				"show": "Wachtwoord tonen",
+				"submit": "Wachtwoord bijwerken"
+			},
+			"errors": {
+				"required": "Verplicht",
+				"passwordTooShort": "Wachtwoord moet minstens {{length}} tekens lang zijn.",
+				"noSmallerLetter": "Wachtwoord moet minstens één kleine letter bevatten.",
+				"noUppercaseLetter": "Wachtwoord moet minstens één hoofdletter bevatten.",
+				"noNumber": "Wachtwoord moet minstens één cijfer bevatten.",
+				"noSpecialCharacter": "Wachtwoord moet minstens één speciaal teken bevatten.",
+				"noMatch": "Nieuw wachtwoord en bevestiging komen niet overeen."
+			},
+			"toasts": {
+				"updateSuccess": "Wachtwoord succesvol bijgewerkt.",
+				"wrongCurrentPassword": "Huidig wachtwoord is onjuist.",
+				"updateError": "Er is een fout opgetreden bij het bijwerken van het wachtwoord. Probeer het later opnieuw."
+			}
+		}
+  },
+  "settings": {
+    "title": "Instellingen",
+		"general": {
+			"title": "Algemeen"
+		},
+		"changelog": {
+			"title": "Changelog"
+		}
+  },
+  "changelog": {
+    "title": "Changelog",
+    "categories": {
+      "added": "Toegevoegd",
+      "improved": "Verbeterd",
+      "fixed": "Opgelost",
+      "removed": "Verwijderd",
+      "deprecated": "Verouderd",
+      "security": "Beveiliging",
+      "performance": "Prestatie",
+      "breaking": "Breaking"
+    }
+  },
+  "log": {
+    "title": "Activiteitenlog",
+    "empty": "Nog geen activiteit",
+    "loadMore": "Meer laden",
+    "action": {
+      "create": "Aangemaakt",
+      "update": "Bijgewerkt",
+      "delete": "Verwijderd",
+      "view": "Bekeken",
+      "export": "Geëxporteerd",
+      "import": "Geïmporteerd",
+      "login": "Ingelogd",
+      "logout": "Uitgelogd",
+      "error": "Fout",
+      "custom": "Actie"
+    },
+    "severity": {
+      "info": "Info",
+      "success": "Succes",
+      "warning": "Waarschuwing",
+      "error": "Fout"
+    },
+    "filter": {
+      "all": "Alle"
+    }
+  },
+  "notifications": {
+    "title": "Notificaties",
+    "empty": "Geen notificaties",
+    "markAsRead": "Markeer als gelezen",
+    "markAllAsRead": "Alles als gelezen markeren",
+    "archive": "Archiveren",
+    "delete": "Verwijderen",
+    "tabs": {
+      "all": "Alle",
+      "unread": "Ongelezen",
+      "info": "Info",
+      "warning": "Waarschuwing",
+      "error": "Fout"
+    },
+    "priority": {
+      "low": "Laag",
+      "medium": "Gemiddeld",
+      "high": "Hoog",
+      "urgent": "Dringend"
+    },
+    "type": {
+      "info": "Info",
+      "success": "Succes",
+      "warning": "Waarschuwing",
+      "error": "Fout",
+      "system": "Systeem",
+      "update": "Update",
+      "message": "Bericht"
+    },
+    "push": {
+      "banner": "Schakel pushmeldingen in om ook buiten de app op de hoogte te blijven.",
+      "enable": "Inschakelen",
+      "error": "Kon geen toestemming krijgen voor pushmeldingen."
+    }
+  },
+	"countries": {
+		"AD": "Andorra",
+		"AE": "Verenigde Arabische Emiraten",
+		"AF": "Afghanistan",
+		"AG": "Antigua en Barbuda",
+		"AI": "Anguilla",
+		"AL": "Albanië",
+		"AM": "Armenië",
+		"AO": "Angola",
+		"AQ": "Antarctica",
+		"AR": "Argentinië",
+		"AS": "Amerikaans-Samoa",
+		"AT": "Oostenrijk",
+		"AU": "Australië",
+		"AW": "Aruba",
+		"AX": "Åland",
+		"AZ": "Azerbeidzjan",
+		"BA": "Bosnië en Herzegovina",
+		"BB": "Barbados",
+		"BD": "Bangladesh",
+		"BE": "België",
+		"BF": "Burkina Faso",
+		"BG": "Bulgarije",
+		"BH": "Bahrein",
+		"BI": "Burundi",
+		"BJ": "Benin",
+		"BL": "Saint-Barthélemy",
+		"BM": "Bermuda",
+		"BN": "Brunei",
+		"BO": "Bolivia",
+		"BR": "Brazilië",
+		"BS": "Bahama's",
+		"BT": "Bhutan",
+		"BV": "Bouvet-eiland",
+		"BW": "Botswana",
+		"BY": "Wit-Rusland",
+		"BZ": "Belize",
+		"CA": "Canada",
+		"CC": "Cocoseilanden",
+		"CD": "Congo, Democratische Republiek",
+		"CF": "Centraal-Afrikaanse Republiek",
+		"CG": "Congo, Republiek",
+		"CH": "Zwitserland",
+		"CI": "Ivoorkust",
+		"CK": "Cookeilanden",
+		"CL": "Chili",
+		"CM": "Kameroen",
+		"CN": "China",
+		"CO": "Colombia",
+		"CR": "Costa Rica",
+		"CU": "Cuba",
+		"CV": "Kaapverdië",
+		"CW": "Curaçao",
+		"CX": "Christmaseiland",
+		"CY": "Cyprus",
+		"CZ": "Tsjechië",
+		"DE": "Duitsland",
+		"DJ": "Djibouti",
+		"DK": "Denemarken",
+		"DM": "Dominica",
+		"DO": "Dominicaanse Republiek",
+		"DZ": "Algerije",
+		"EC": "Ecuador",
+		"EE": "Estland",
+		"EG": "Egypte",
+		"EH": "Westelijke Sahara",
+		"ER": "Eritrea",
+		"ES": "Spanje",
+		"ET": "Ethiopië",
+		"FI": "Finland",
+		"FJ": "Fiji",
+		"FK": "Falklandeilanden",
+		"FM": "Micronesia",
+		"FO": "Faeröer",
+		"FR": "Frankrijk",
+		"GA": "Gabon",
+		"GB": "Verenigd Koninkrijk",
+		"GD": "Grenada",
+		"GE": "Georgië",
+		"GF": "Frans-Guyana",
+		"GG": "Guernsey",
+		"GH": "Ghana",
+		"GI": "Gibraltar",
+		"GL": "Groenland",
+		"GM": "Gambia",
+		"GN": "Guinee",
+		"GP": "Guadeloupe",
+		"GQ": "Equatoriaal-Guinea",
+		"GR": "Griekenland",
+		"GS": "Zuid-Georgië en de Zuidelijke Sandwicheilanden",
+		"GT": "Guatemala",
+		"GU": "Guam",
+		"GW": "Guinee-Bissau",
+		"GY": "Guyana",
+		"HK": "Hongkong",
+		"HM": "Heard en McDonaldeilanden",
+		"HN": "Honduras",
+		"HR": "Kroatië",
+		"HT": "Haïti",
+		"HU": "Hongarije",
+		"ID": "Indonesië",
+		"IE": "Ierland",
+		"IL": "Israël",
+		"IM": "Isle of Man",
+		"IN": "India",
+		"IO": "Brits Indische Oceaanterritorium",
+		"IQ": "Irak",
+		"IR": "Iran",
+		"IS": "IJsland",
+		"IT": "Italië",
+		"JE": "Jersey",
+		"JM": "Jamaica",
+		"JO": "Jordanië",
+		"JP": "Japan",
+		"KE": "Kenia",
+		"KG": "Kirgizië",
+		"KH": "Cambodja",
+		"KI": "Kiribati",
+		"KM": "Comoren",
+		"KN": "Saint Kitts en Nevis",
+		"KP": "Noord-Korea",
+		"KR": "Zuid-Korea",
+		"KW": "Koeweit",
+		"KY": "Kaaimaneilanden",
+		"KZ": "Kazachstan",
+		"LA": "Laos",
+		"LB": "Libanon",
+		"LC": "Saint Lucia",
+		"LI": "Liechtenstein",
+		"LK": "Sri Lanka",
+		"LR": "Liberia",
+		"LS": "Lesotho",
+		"LT": "Litouwen",
+		"LU": "Luxemburg",
+		"LV": "Letland",
+		"LY": "Libië",
+		"MA": "Marokko",
+		"MC": "Monaco",
+		"MD": "Moldavië",
+		"ME": "Montenegro",
+		"MF": "Saint-Martin (Frans deel)",
+		"MG": "Madagaskar",
+		"MH": "Marshalleilanden",
+		"MK": "Noord-Macedonië",
+		"ML": "Mali",
+		"MM": "Myanmar",
+		"MN": "Mongolië",
+		"MO": "Macau",
+		"MP": "Noordelijke Marianen",
+		"MQ": "Martinique",
+		"MR": "Mauritanië",
+		"MS": "Montserrat",
+		"MT": "Malta",
+		"MU": "Mauritius",
+		"MV": "Maldiven",
+		"MW": "Malawi",
+		"MX": "Mexico",
+		"MY": "Maleisië",
+		"MZ": "Mozambique",
+		"NA": "Namibië",
+		"NC": "Nieuw-Caledonië",
+		"NE": "Niger",
+		"NF": "Norfolk",
+		"NG": "Nigeria",
+		"NI": "Nicaragua",
+		"NL": "Nederland",
+		"NO": "Noorwegen",
+		"NP": "Nepal",
+		"NR": "Nauru",
+		"NU": "Niue",
+		"NZ": "Nieuw-Zeeland",
+		"OM": "Oman",
+		"PA": "Panama",
+		"PE": "Peru",
+		"PF": "Frans-Polynesië",
+		"PG": "Papoea-Nieuw-Guinea",
+		"PH": "Filipijnen",
+		"PK": "Pakistan",
+		"PL": "Polen",
+		"PM": "Saint-Pierre en Miquelon",
+		"PN": "Pitcairneilanden",
+		"PR": "Puerto Rico",
+		"PS": "Palestina",
+		"PT": "Portugal",
+		"PW": "Palau",
+		"PY": "Paraguay",
+		"QA": "Qatar",
+		"RE": "Réunion",
+		"RO": "Roemenië",
+		"RS": "Servië",
+		"RU": "Rusland",
+		"RW": "Rwanda",
+		"SA": "Saoedi-Arabië",
+		"SB": "Solomon-eilanden",
+		"SC": "Seychellen",
+		"SD": "Soedan",
+		"SE": "Zweden",
+		"SG": "Singapore",
+		"SH": "Sint-Helena",
+		"SI": "Slovenië",
+		"SJ": "Spitsbergen en Jan Mayen",
+		"SK": "Slowakije",
+		"SL": "Sierra Leone",
+		"SM": "San Marino",
+		"SN": "Senegal",
+		"SO": "Somalië",
+		"SR": "Suriname",
+		"SS": "Zuid-Soedan",
+		"ST": "Sao Tomé en Principe",
+		"SV": "El Salvador",
+		"SX": "Sint-Maarten (Nederlands deel)",
+		"SY": "Syrië",
+		"SZ": "Eswatini",
+		"TC": "Turks- en Caicoseilanden",
+		"TD": "Tsjaad",
+		"TF": "Franse Zuidelijke Gebieden",
+		"TG": "Togo",
+		"TH": "Thailand",
+		"TJ": "Tadzjikistan",
+		"TK": "Tokelau",
+		"TL": "Oost-Timor",
+		"TM": "Turkmenistan",
+		"TN": "Tunesië",
+		"TO": "Tonga",
+		"TR": "Turkije",
+		"TT": "Trinidad en Tobago",
+		"TV": "Tuvalu",
+		"TW": "Taiwan",
+		"TZ": "Tanzania",
+		"UA": "Oekraïne",
+		"UG": "Oeganda",
+		"US": "Verenigde Staten",
+		"UY": "Uruguay",
+		"UZ": "Oezbekistan",
+		"VA": "Vaticaanstad",
+		"VC": "Saint Vincent en de Grenadines",
+		"VE": "Venezuela",
+		"VG": "Britse Maagdeneilanden",
+		"VI": "Amerikaanse Maagdeneilanden",
+		"VN": "Vietnam",
+		"VU": "Vanuatu",
+		"WF": "Wallis en Futuna",
+		"WS": "Samoa",
+		"XK": "Kosovo",
+		"YE": "Jemen",
+		"YT": "Mayotte",
+		"ZA": "Zuid-Afrika",
+		"ZM": "Zambia",
+		"ZW": "Zimbabwe"
+	}
+}

@@ -1,0 +1,47 @@
+.navigation-tabs {
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+  height: 49px;
+  min-height: 49px;
+  max-height: 49px;
+  white-space: nowrap;
+}
+
+.navigation-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 16px;
+  height: 48px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-bottom: 2px solid transparent;
+  color: var(--palette-text-secondary);
+  transition: color 0.3s ease, border-bottom-color 0.3s ease, background-color 0.3s ease;
+}
+
+.tab.active {
+  background-color: color-mix(in srgb, currentColor 4%, transparent);
+}
+
+.tab:not(.active):hover {
+  color: var(--palette-text-primary);
+  background-color: color-mix(in srgb, var(--palette-text-primary) 4%, transparent);
+}
+
+.tab .label {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
