@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Mail, Github, Linkedin } from "lucide-react";
+import { WEB3FORMS_ACCESS_KEY } from "@/data/brand";
 import Reveal from "./shared/Reveal";
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
 const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 
 const CONTACT_LINKS = [
