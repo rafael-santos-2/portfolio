@@ -3,6 +3,8 @@ import { Mail, Github, Linkedin } from "lucide-react";
 import Reveal from "./shared/Reveal";
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 
 const CONTACT_LINKS = [
   {
@@ -28,15 +30,36 @@ const inputClasses =
 export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState("idle"); // idle | sending | sent | error
 
   const emailValid = EMAIL_PATTERN.test(email);
-  const canSubmit = emailValid && message.trim().length > 0;
+  const canSubmit = emailValid && message.trim().length > 0 && status !== "sending";
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
     if (!canSubmit) return;
-    setSent(true);
+
+    if (event.target.botcheck.checked) return; // honeypot tripped, silently drop
+
+    setStatus("sending");
+
+    try {
+      const formData = new FormData();
+      formData.append("access_key", WEB3FORMS_ACCESS_KEY);
+      formData.append("subject", "Nieuw bericht via portfolio");
+      formData.append("from_name", "Portfolio contactformulier");
+      formData.append("email", email);
+      formData.append("message", message);
+
+      const response = await fetch(WEB3FORMS_ENDPOINT, {
+        method: "POST",
+        body: formData,
+      });
+      const result = await response.json();
+      setStatus(result.success ? "sent" : "error");
+    } catch {
+      setStatus("error");
+    }
   }
 
   return (
@@ -66,7 +89,7 @@ export default function Contact() {
               </span>
             </div>
 
-            {sent ? (
+            {status === "sent" ? (
               <div className="p-5 font-mono text-sm space-y-2">
                 <p className="text-muted-foreground">$ ./send --message</p>
                 <p className="text-accent">
@@ -75,6 +98,15 @@ export default function Contact() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="p-5 space-y-5">
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  className="hidden"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                />
+
                 <div>
                   <label
                     htmlFor="contact-email"
@@ -122,12 +154,19 @@ export default function Contact() {
                   />
                 </div>
 
+                {status === "error" && (
+                  <p className="font-mono text-[11px] text-red-500">
+                    ▸ Verzenden mislukt. Probeer het opnieuw of mail direct naar{" "}
+                    {CONTACT_LINKS[0].label}.
+                  </p>
+                )}
+
                 <button
                   type="submit"
                   disabled={!canSubmit}
                   className="w-full md:w-auto px-6 py-3 border border-primary text-primary font-mono text-sm uppercase tracking-wider transition-colors hover:bg-primary hover:text-white disabled:opacity-40 disabled:pointer-events-none"
                 >
-                  ▸ ./execute --send
+                  {status === "sending" ? "▸ ./sending..." : "▸ ./execute --send"}
                 </button>
               </form>
             )}
